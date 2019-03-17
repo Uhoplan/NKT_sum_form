@@ -1,4 +1,20 @@
 var nktArray = [];
+let a1 = document.getElementById('a1');
+let getFromInput = document.getElementById( 'buttonSum' );
+//функция для добавления элементов в массив
+ a1.onchange = function addInArr (cell) {
+	 if (a1.value == NaN || a1.value >=25 || a1.value < 0) {
+		 console.log('Хуйня какая то!');
+	 }
+	 else {
+	cell = parseFloat(a1.value);
+	nktArray.push(cell);
+	console.log (nktArray);
+	}
+}
+
+
+/*
 let a1 = document.getElementById( 'a1' )
 let a2 = document.getElementById( 'a2' );
 let a3 = document.getElementById( 'a3' );
@@ -27,13 +43,14 @@ var getFromInput = document.getElementById( 'buttonSum' );
 		return sum + curient;
 			});
 			document.getElementById( 'summ' ).innerHTML = '&#8721;'+nktSum+'';
-	}*/
+	}
 
-function addToArray(arr) {
+//функция для сложения элементов массива
+function sumArray(arr) {
 	let sum = 0;
 		for (var i = 0; i < arr.length; i++) {
-		sum = parseInt (sum + arr[i]);
+		sum = parseFloat (sum + arr[i]);
 		}
 		return sum;
 }
-	document.getElementById( 'summ' ).innerHTML = '&#8721;'+addToArray(nktArray)+'  ';
+*/
