@@ -1,19 +1,36 @@
 var nktArray = [];
 let a1 = document.getElementById('a1');
-let getFromInput = document.getElementById( 'buttonSum' );
+let getFromInput = document.getElementById('buttonSum');
+let ol = document.createElement('ol');
+document.body.appendChild(ol);
 //функция для добавления элементов в массив
- a1.onchange = function addInArr (cell) {
-	 if (a1.value == NaN || a1.value >=25 || a1.value < 0) {
-		 console.log('Хуйня какая то!');
-	 }
-	 else {
-	cell = parseFloat(a1.value);
-	nktArray.push(cell);
-	console.log (nktArray);
-	}
+a1.onchange = function addInArr(cell) {
+  if (a1.value == NaN || a1.value >= 25 || a1.value <= -0.99) {
+    console.log('Хуйня какая то!');
+  } else {
+    cell = parseFloat(a1.value);
+    nktArray.push(cell);
+    let li = document.createElement('li');
+    li.appendChild(document.createTextNode(cell));
+    ol.appendChild(li);
+    console.log(nktArray);
+  }
 }
+/*
+var ul = document.createElement('ul');
+    document.body.appendChild(ul);
 
+    while (true) {
+      var data = prompt("Введите текст для пункта списка", "");
 
+      if (!data) {
+        break;
+      }
+
+      var li = document.createElement('li');
+      li.appendChild(document.createTextNode(data));
+      ul.appendChild(li);
+    }
 /*
 let a1 = document.getElementById( 'a1' )
 let a2 = document.getElementById( 'a2' );
