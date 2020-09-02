@@ -5,56 +5,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
   <link rel="stylesheet" href="css/master.css">
 
   <title>Document</title>
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="page-header">
-        <h1>Header</h1>
+<header>Заголовок</header>
+<div class="main">Мэйн
+<div class="enter-block">
 
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12 col-md-2 col-lg-1 menu">
-  <p id = "NKTList"></p>
+      <input type="number" value="10.55"  onchange="addToArr(this.value);return false" autofocus>
 
-      <p>
-      <input type="text" class="field"
-      placeholder="00.00" pattern="\d{1,2}\.\d{1,2}"
-      id="a1">
-      </p>
 
-        <div class="row">
-          <div class="col-sm-12 col-md-12 col-lg-12">
-        <p id="summ">&#8721;=&#173;&#173;</p>
-      <button id="buttonSum">Сумма</button>
-            </form>
-          </div>
-        </div>
-      </div>
+</div>
 
-    <div class="clr"></div>
+<div class="nkt-list">
+  <div class="list-column-block0">
+  <table id="decimal-block0" class="decimal-block-table">
 
-  </div>
-  <footer class="footer">
-    <div class="container">
-      <p class="text-muted">Place sticky footer content here.</p>
-    </div>
 
-  </footer>
+  </table>
+</div>
+</div>
+
+<div class="decimal-block-result"></div>
+</div>
+
 
   <script src="js/my.js"></script>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</script>
 </body>
 
 </html>
