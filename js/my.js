@@ -5,7 +5,7 @@ let ol = document.createElement('ol');
 document.body.appendChild(ol);
 //функция для добавления элементов в массив
 a1.onchange = function addInArr(cell) {
-  if (a1.value == NaN || a1.value >= 25 || a1.value <= -0.99) {
+  if (a1.value == NaN || a1.value >= 25 ) {
     console.log('Хуйня какая то!');
   } else {
     cell = parseFloat(a1.value);
